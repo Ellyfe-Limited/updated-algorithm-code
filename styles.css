@@ -1,0 +1,26 @@
+/* Use Roboto as the default font */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f9fc;
+}
+
+/* Custom styling for the card */
+.card {
+  border-radius: 0.75rem;
+}
+
+/* Styling for the navbar brand */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Smooth fade-in for results and error messages */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
