@@ -1,21 +1,27 @@
-/* Use Roboto as the default font */
+/* Global Styles */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f7f9fc;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-/* Custom styling for the card */
+/* Card Styling */
 .card {
   border-radius: 0.75rem;
 }
 
-/* Styling for the navbar brand */
+/* Navbar Branding */
 .navbar-brand {
   font-weight: 700;
   font-size: 1.5rem;
 }
 
-/* Smooth fade-in for results and error messages */
+/* Input Group Text (for icons) */
+.input-group-text {
+  background-color: #e9ecef;
+}
+
+/* Fade-in animation */
 .fade-in {
   animation: fadeIn 0.5s ease-in-out;
 }
@@ -23,4 +29,43 @@ body {
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+}
+
+.dark-mode .input-group-text {
+  background-color: #343a40;
+  color: #e0e0e0;
+}
+
+.dark-mode .form-control,
+.dark-mode .form-select {
+  background-color: #343a40;
+  color: #e0e0e0;
+  border-color: #495057;
+}
+
+.dark-mode .alert {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+/* Button Overrides */
+.btn-light {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
 }
